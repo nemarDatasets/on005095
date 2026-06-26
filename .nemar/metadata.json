@@ -1,9 +1,9 @@
 {
   "version": "2.0",
-  "dataset_id": "on005095",
-  "source": "openneuro",
-  "source_id": "ds005095",
+  "pipeline_stage": "validated",
   "title": "STERNBERG DIFFICULT",
+  "license": "CC0",
+  "dataset_type": "raw",
   "authors": {
     "Natalia Zhozhikashvili": {},
     "Maria Protopova": {},
@@ -14,21 +14,65 @@
     "Sergey Malykh": {},
     "Yuri Pavlov": {}
   },
-  "license": "CC0",
-  "dataset_type": "raw",
   "related_identifiers": [
     {
       "identifier": "10.18112/openneuro.ds005095.v1.0.2",
       "identifier_type": "DOI",
       "relation_type": "IsIdenticalTo"
+    },
+    {
+      "identifier": "https://github.com/nemarDatasets/on005095",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=on005095",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.1016/j.ijpsycho.2024.112355",
+      "identifier_type": "DOI",
+      "relation_type": "IsDescribedBy"
     }
   ],
-  "pipeline_stage": "seeded",
-  "bids_version": "1.7.0",
-  "recording_modality": [
+  "resource_type_general": "Dataset",
+  "modalities": [
     "eeg"
   ],
-  "datatypes": [
-    "eeg"
-  ]
+  "resource_type_specific": "EEG Dataset",
+  "sizes": [
+    "0.0 KB (1 files)"
+  ],
+  "formats": [
+    ".eeg",
+    ".json",
+    ".md",
+    ".tsv",
+    ".vhdr",
+    ".vmrk"
+  ],
+  "description": "This dataset contains raw EEG recordings from participants performing a modified Sternberg working memory task with varying memory load (3-15 consonants). Participants encoded letter sets, maintained them during a retention period, and made recognition judgments on probe letters while EEG was recorded. The dataset includes behavioral responses and Raven Progressive Matrices scores, providing a resource for investigating neural correlates of working memory capacity and cognitive load.",
+  "methods_description": "EEG was recorded during a Sternberg task with five difficulty levels (set sizes: 3, 6, 9, 12, 15 consonants from the Russian alphabet). Each trial consisted of an encoding phase (1500 ms), retention phase (2000 ms), and retrieval phase (1500 ms), preceded by a 500-1000 ms fixation cross. Participants completed 200 trials (40 per difficulty block) with equal numbers of positive and negative probes. Stimuli were presented using PsychoPy2, and responses were collected via button press (left arrow for 'no', right arrow for 'yes'). Event triggers mark stimulus onset only; retention and retrieval timepoints can be computed from the experimental design (1500 ms and 3500 ms post-trigger, respectively).",
+  "keywords": [
+    {
+      "term": "EEG"
+    },
+    {
+      "term": "working memory"
+    },
+    {
+      "term": "Sternberg task"
+    },
+    {
+      "term": "cognitive load"
+    },
+    {
+      "term": "event-related potentials"
+    },
+    {
+      "term": "memory encoding"
+    }
+  ],
+  "source_hash": "1087f4c0399d89211d02711f236d1e0cf35c9cf2e2722ff00105d4be2666ea56"
 }
