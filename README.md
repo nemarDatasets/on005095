@@ -1,3 +1,5 @@
+[![DOI](https://img.shields.io/badge/DOI-10.82901%2Fnemar.on005095-blue)](https://doi.org/10.82901/nemar.on005095)
+
 # Overview
 
 This is the "Sternberg Difficult" dataset contain RAW EEG data. Raven Progressive Standard Matrices scores for each participant are provided in participants.tsv
