@@ -2,6 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "STERNBERG DIFFICULT",
+  "description": "This dataset contains raw EEG recordings from participants performing a modified Sternberg working memory task with varying set sizes (3, 6, 9, 12, and 15 Russian consonant letters). The study investigates neural correlates of working memory load and cognitive difficulty, with participants' Raven Progressive Standard Matrices scores provided for cognitive ability assessment. The dataset includes 200 trials per participant organized in difficulty blocks with standardized encoding, retention, and retrieval phases.",
+  "methods_description": "EEG data were recorded during a Sternberg task where participants viewed sets of Russian consonant letters (set sizes: 3, 6, 9, 12, 15) followed by probe letter recognition. Each trial consisted of a 500-1000 ms fixation cross, 1500 ms encoding phase, 2000 ms retention phase, and 1500 ms retrieval phase. Participants responded via button press (left arrow for 'no', right arrow for 'yes'). Stimuli were presented using PsychoPy2. Participants completed 200 trials total (40 trials per set size block) with breaks between blocks.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -14,46 +16,6 @@
     "Sergey Malykh": {},
     "Yuri Pavlov": {}
   },
-  "related_identifiers": [
-    {
-      "identifier": "10.18112/openneuro.ds005095.v1.0.2",
-      "identifier_type": "DOI",
-      "relation_type": "IsIdenticalTo"
-    },
-    {
-      "identifier": "https://github.com/nemarDatasets/on005095",
-      "identifier_type": "URL",
-      "relation_type": "IsDescribedBy"
-    },
-    {
-      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=on005095",
-      "identifier_type": "URL",
-      "relation_type": "IsDescribedBy"
-    },
-    {
-      "identifier": "10.1016/j.ijpsycho.2024.112355",
-      "identifier_type": "DOI",
-      "relation_type": "IsDescribedBy"
-    }
-  ],
-  "resource_type_general": "Dataset",
-  "modalities": [
-    "eeg"
-  ],
-  "resource_type_specific": "EEG Dataset",
-  "sizes": [
-    "0.0 KB (1 files)"
-  ],
-  "formats": [
-    ".eeg",
-    ".json",
-    ".md",
-    ".tsv",
-    ".vhdr",
-    ".vmrk"
-  ],
-  "description": "This dataset contains raw EEG recordings from participants performing a modified Sternberg working memory task with varying memory load (3-15 consonants). Participants encoded letter sets, maintained them during a retention period, and made recognition judgments on probe letters while EEG was recorded. The dataset includes behavioral responses and Raven Progressive Matrices scores, providing a resource for investigating neural correlates of working memory capacity and cognitive load.",
-  "methods_description": "EEG was recorded during a Sternberg task with five difficulty levels (set sizes: 3, 6, 9, 12, 15 consonants from the Russian alphabet). Each trial consisted of an encoding phase (1500 ms), retention phase (2000 ms), and retrieval phase (1500 ms), preceded by a 500-1000 ms fixation cross. Participants completed 200 trials (40 per difficulty block) with equal numbers of positive and negative probes. Stimuli were presented using PsychoPy2, and responses were collected via button press (left arrow for 'no', right arrow for 'yes'). Event triggers mark stimulus onset only; retention and retrieval timepoints can be computed from the experimental design (1500 ms and 3500 ms post-trigger, respectively).",
   "keywords": [
     {
       "term": "EEG"
@@ -74,5 +36,44 @@
       "term": "memory encoding"
     }
   ],
-  "source_hash": "1087f4c0399d89211d02711f236d1e0cf35c9cf2e2722ff00105d4be2666ea56"
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/nemarDatasets/on005095",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=on005095",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.1016/j.ijpsycho.2024.112355",
+      "identifier_type": "DOI",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.18112/openneuro.ds005095.v1.0.2",
+      "identifier_type": "DOI",
+      "relation_type": "IsDerivedFrom"
+    }
+  ],
+  "resource_type_general": "Dataset",
+  "resource_type_specific": "EEG Dataset",
+  "modalities": [
+    "eeg"
+  ],
+  "sizes": [
+    "15.0 GB (144 files)"
+  ],
+  "formats": [
+    ".eeg",
+    ".json",
+    ".md",
+    ".tsv",
+    ".vhdr",
+    ".vmrk",
+    ".yml"
+  ],
+  "source_hash": "5a5c6a0effc3656eae6111d0d01b304d30b5172a33f1f2ded373dbc7d58a1a83"
 }
