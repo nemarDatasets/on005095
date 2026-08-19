@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "STERNBERG DIFFICULT",
-  "description": "This dataset contains raw EEG recordings from participants performing a modified Sternberg working memory task with varying set sizes (3, 6, 9, 12, and 15 Russian consonant letters). The study investigates neural correlates of working memory load and cognitive difficulty, with participants' Raven Progressive Standard Matrices scores provided for cognitive ability assessment. The dataset includes 200 trials per participant organized in difficulty blocks with standardized encoding, retention, and retrieval phases.",
-  "methods_description": "EEG data were recorded during a Sternberg task where participants viewed sets of Russian consonant letters (set sizes: 3, 6, 9, 12, 15) followed by probe letter recognition. Each trial consisted of a 500-1000 ms fixation cross, 1500 ms encoding phase, 2000 ms retention phase, and 1500 ms retrieval phase. Participants responded via button press (left arrow for 'no', right arrow for 'yes'). Stimuli were presented using PsychoPy2. Participants completed 200 trials total (40 trials per set size block) with breaks between blocks.",
+  "description": "This dataset contains raw EEG recordings from participants performing a Sternberg working memory task with Russian alphabet letters presented in varying set sizes (3, 6, 9, 12, and 15 letters). Participants' Raven Progressive Standard Matrices scores are also included, allowing investigation of the relationship between working memory load and cognitive ability. The dataset supports research on encoding, retention, and retrieval processes in verbal working memory using EEG.",
+  "methods_description": "Participants performed a Sternberg task in which sets of Russian consonant letters (3, 6, 9, 12, or 15 items) were presented during an encoding phase (1500 ms), followed by a retention phase (2000 ms, blank screen), and a retrieval phase (1500 ms) during which a probe letter was shown. Participants indicated via button press whether the probe letter had appeared in the encoding set. Each trial was preceded by a 500-1000 ms fixation cross, and 200 trials were completed in total (40 per set-size block). Stimuli were presented and responses recorded using PsychoPy2. EEG triggers marked only the onset of stimulus presentation; retention and retrieval times were computed based on fixed trial timing.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -30,10 +30,10 @@
       "term": "cognitive load"
     },
     {
-      "term": "event-related potentials"
+      "term": "Raven Progressive Matrices"
     },
     {
-      "term": "memory encoding"
+      "term": "event-related potentials"
     }
   ],
   "related_identifiers": [
@@ -43,19 +43,19 @@
       "relation_type": "IsDescribedBy"
     },
     {
-      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=on005095",
-      "identifier_type": "URL",
-      "relation_type": "IsDescribedBy"
-    },
-    {
       "identifier": "10.1016/j.ijpsycho.2024.112355",
       "identifier_type": "DOI",
-      "relation_type": "IsDescribedBy"
+      "relation_type": "IsSupplementTo"
     },
     {
       "identifier": "10.18112/openneuro.ds005095.v1.0.2",
       "identifier_type": "DOI",
       "relation_type": "IsDerivedFrom"
+    },
+    {
+      "identifier": "https://nemar.org/dataset/on005095",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
     }
   ],
   "resource_type_general": "Dataset",
