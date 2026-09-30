@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "STERNBERG DIFFICULT",
-  "description": "This dataset contains raw EEG recordings from participants performing a Sternberg working memory task with Russian alphabet letters presented in varying set sizes (3, 6, 9, 12, and 15 letters). Participants' Raven Progressive Standard Matrices scores are also included, allowing investigation of the relationship between working memory load and cognitive ability. The dataset supports research on encoding, retention, and retrieval processes in verbal working memory using EEG.",
-  "methods_description": "Participants performed a Sternberg task in which sets of Russian consonant letters (3, 6, 9, 12, or 15 items) were presented during an encoding phase (1500 ms), followed by a retention phase (2000 ms, blank screen), and a retrieval phase (1500 ms) during which a probe letter was shown. Participants indicated via button press whether the probe letter had appeared in the encoding set. Each trial was preceded by a 500-1000 ms fixation cross, and 200 trials were completed in total (40 per set-size block). Stimuli were presented and responses recorded using PsychoPy2. EEG triggers marked only the onset of stimulus presentation; retention and retrieval times were computed based on fixed trial timing.",
+  "description": "Raw EEG recordings from participants performing a Sternberg working memory task with Russian consonant letter sets of 3, 6, 9, 12, and 15 items. Each participant completed 200 trials across five difficulty blocks. Raven's Progressive Matrices scores are provided for each participant in participants.tsv.",
+  "methods_description": "Participants performed a Sternberg task during EEG recording. Each trial had a 500-1000 ms fixation cross, then 1500 ms encoding, 2000 ms retention, and 1500 ms retrieval (probe letter). Participants answered yes or no with arrow keys. There were 200 trials in total, 40 per set size, in random block order with equal numbers of positive and negative probes. Stimuli were presented with Psychopy2. Triggers mark only stimulus onset, so retention and retrieval onsets must be computed from the trial design (1500 ms and 3500 ms after the trigger).",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -27,13 +27,13 @@
       "term": "Sternberg task"
     },
     {
-      "term": "cognitive load"
+      "term": "memory load"
     },
     {
       "term": "Raven Progressive Matrices"
     },
     {
-      "term": "event-related potentials"
+      "term": "intrinsic motivation"
     }
   ],
   "related_identifiers": [
@@ -45,7 +45,7 @@
     {
       "identifier": "10.1016/j.ijpsycho.2024.112355",
       "identifier_type": "DOI",
-      "relation_type": "IsSupplementTo"
+      "relation_type": "IsDescribedBy"
     },
     {
       "identifier": "10.18112/openneuro.ds005095.v1.0.2",
@@ -64,7 +64,7 @@
     "eeg"
   ],
   "sizes": [
-    "15.0 GB (144 files)"
+    "13.99 GB (144 files)"
   ],
   "formats": [
     ".eeg",
